@@ -22,10 +22,11 @@
 double coord_2d_area_triangle(const coord_2d_t *a, const 
 coord_2d_t *b, const coord_2d_t *c){
 		
-		double x;
+		//double area = ((a->x*(b->y - c->y)+ b->x*(c->y - a->y)+c->x*(a->y - b->y))/2);
 		
 		
-	return 
+	//return area;
+	return ((a->x*(b->y - c->y)+ b->x*(c->y - a->y)+c->x*(a->y - b->y))/2);
 }
 
 double coord_2d_dist(const coord_2d_t* a, const coord_2d_t* b){
